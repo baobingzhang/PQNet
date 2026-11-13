@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+/dataset/
+/results/
+/demo_forecast.png
+*.egg-info/
+.venv/
