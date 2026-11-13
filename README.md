@@ -9,7 +9,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-2a6fc4.svg)](LICENSE)
 [![Tests](https://img.shields.io/badge/tests-10%20passed-178f64.svg)](tests/test_pqnet.py)
 
-[Idea](#the-idea) · [Quick start](#quick-start) · [Results](#results) · [Reproduce](#reproduce-the-benchmarks) · [Citation](#citation)
+[Idea](#the-idea) · [Quick start](#quick-start) · [Results](#results) · [Reproduce](#reproduce-the-benchmarks)
 
 </div>
 
@@ -139,25 +139,6 @@ pip install pytest && python -m pytest -q tests   # 10 tests, about 1 second
 
 The tests check the claims the method rests on: TQNet is the zero-residual special case, forecasts depend on time only through the phase, the residual is read at the future phases, and the period rule handles trends, random walks, nested cycles and the capacity bound.
 
-## Citation
-
-The paper is under review. Until it is published, please cite:
-
-```bibtex
-@misc{zhang2026pqnet,
-  title  = {{PQNet}: Dual-Sided Periodic Memory With Data-Driven Period Discovery
-            for Multivariate Sensor Time Series Forecasting},
-  author = {Zhang, Baobing and Zheng, Yongjun},
-  year   = {2026},
-  note   = {Manuscript under review},
-  howpublished = {\url{https://github.com/baobingzhang/PQNet}}
-}
-```
-
 ## Acknowledgements
 
 PQNet builds on [TQNet](https://github.com/ACAT-SCUT/TQNet) (Lin et al., ICML 2025) and [CycleNet](https://github.com/ACAT-SCUT/CycleNet) (Lin et al., NeurIPS 2024). The data splits and per-dataset settings follow the official TQNet scripts; this repository contains no code copied from them.
-
-## Contact
-
-Baobing Zhang (b.zhang6@herts.ac.uk) and Yongjun Zheng (y.zheng20@herts.ac.uk, corresponding author), School of Physics, Engineering and Computer Science, University of Hertfordshire, UK.
